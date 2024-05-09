@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow'; /* Utiliza la fuente Impact como primera opción y si no está disponible, usa una fuente genérica sans-serif */
+    font-weight: 100; /* Ajusta el peso de la fuente a un valor más ligero */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+.container {
+    width: 80%; /* Establece el ancho del contenedor al 80% del ancho de la ventana del navegador */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    overflow: hidden; /* Oculta el contenido que excede el ancho del contenedor */
+}
+
+/* Navbar */
+.navbar {
+    background: black; /* Fondo negro */
+    color: yellow; /* Texto amarillo */
+    padding: 20px 0; /* Relleno superior e inferior de 20 píxeles y sin relleno a los lados */
+}
+
+.navbar h1 {
+    margin: 0; /* Elimina el margen superior e inferior del título */
+    float: left; /* Hace que el título flote a la izquierda */
+}
+
+.navbar ul {
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    list-style: none; /* Elimina los marcadores de lista */
+    float: right; /* Hace que la lista flote a la derecha */
+}
+
+.navbar ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+}
+
+.navbar ul li a {
+    color: yellow; /* Texto amarillo */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px 20px; /* Relleno superior e inferior de 10 píxeles y relleno a los lados de 20 píxeles */
+}
+
+/* Body */
+.section {
+    padding: 50px 0; /* Relleno superior e inferior de 50 píxeles y sin relleno a los lados */
+}
+
+.card-container {
+    display: grid; /* Utiliza un layout de cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define la estructura de la cuadrícula */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    background: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Relleno de 20 píxeles */
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.card img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+}
+
+.card h3,
+.card p {
+    margin-top: 10px; /* Margen superior de 10 píxeles */
+}
+
+/* Sección de Entrenamiento */
+.entrenamiento-section {
+    padding: 80px 0; /* Relleno superior e inferior de 80 píxeles y sin relleno a los lados */
+    background-color: yellow; /* Fondo amarillo */
+    color: black; /* Texto negro */
+}
+
+.entrenamiento-content {
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+}
+
+.entrenamiento-text {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    padding: 20px; /* Relleno de 20 píxeles */
+}
+
+.entrenamiento-image img {
+    float: right; /* Hace que la imagen flote a la derecha */
+    width: 400px; /* Ancho de la imagen */
+    margin-left: 20px; /* Margen a la izquierda de la imagen */
+    border-radius: 10px; /* Redondear las esquinas */
+}
+
+/* Sección informativa */
+.info-section {
+    background: #f0f0f0; /* Fondo gris claro */
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+/* Footer */
+.footer {
+    background: black; /* Fondo negro */
+    color: yellow; /* Texto amarillo */
+    text-align: center; /* Alinea el contenido al centro */
+    padding: 20px 0; /* Relleno superior e inferior de 20 píxeles y sin relleno a los lados */
+}
+
+/* Parallax background */
+.parallax-bg {
+    background-image: url('../resources/images/pexels-scottwebb-28080.jpg'); /* Establece la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    background-position: center; /* Posición de la imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el elemento */
+    padding-top: 100px; /* Relleno superior de 100 píxeles */
+    padding-bottom: 100px; /* Relleno inferior de 100 píxeles */
+}
+
+/* Sección de servicios */
+#servicios-separador {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+#servicios-separador h2 {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.card-ba {
+    background: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Relleno de 20 píxeles */
+    text-align: center; /* Alinea el contenido al centro */
+    transition: transform 0.3s ease-in-out; /* Transición para suavizar el cambio de escala */
+}
+
+.card-ba:hover {
+    transform: scale(1.05); /* Escala ligeramente más grande cuando se pasa el mouse sobre la tarjeta */
+}
+
+.card-plans {
+    background: transparent; /* Fondo transparente */
+    color: white; /* Texto en blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Relleno de 20 píxeles */
+    text-align: center; /* Alinea el contenido al centro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease-in-out; /* Transición para suavizar el cambio de escala */
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Apila elementos verticalmente */
+    justify-content: space-between; /* Distribuye elementos uniformemente */
+}
+
+.card-plans:hover {
+    transform: scale(1.05); /* Escala ligeramente más grande cuando se pasa el mouse sobre la tarjeta */
+}
+
+.card-plans h3 {
+    font-size: 28px; /* Tamaño del título aumentado */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+}
+
+.card-plans p {
+    font-size: 24px; /* Tamaño del texto aumentado */
+    font-weight: bold; /* Texto en negrita */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno de 10 píxeles arriba y abajo y de 20 píxeles a los lados */
+    cursor: pointer; /* Cursor de tipo puntero */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.card-plans p:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Color de fondo más oscuro al pasar el mouse */
+}
